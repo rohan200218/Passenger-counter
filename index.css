@@ -1,0 +1,276 @@
+body {
+    background-image: url("station.jpg");
+    background-size: cover;
+    font-family: Apple Chancery, cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+    border-color: black;
+    font-weight:500;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color:rgb(17, 11, 1)
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+button {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 300;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#save-btn {
+    background: darkgreen;
+}
+
+#save-el{
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    color:rgb(1, 133, 1)
+}
+
+.container{
+    background-color: aliceblue;
+    border-radius: 10px;
+    max-width: 30%;
+    margin: auto;
+    border: 3px solid black;
+}
+
+
+.incr-button {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .incr-button {
+    padding: 19px 32px;
+  }
+}
+
+.incr-button:before,
+.incr-button:after {
+  border-radius: 80px;
+}
+
+.incr-button:before {
+  background-image: linear-gradient(92.83deg, #ff0000 0, #760000 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.incr-button:after {
+  background-color: initial;
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.incr-button:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(226, 0, 0) 0%, rgb(233, 39, 0) 100%);
+}
+
+.incr-button:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.incr-button:active:not(:disabled) {
+  color: #ccc;
+}
+
+.incr-button:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff0000 0, #891700 100%);
+}
+
+.incr-button:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.incr-button:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+.save-button{
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01,sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .save-button{
+      padding: 19px 32px;
+    }
+  }
+  
+  .save-button:before,
+  .save-button:after {
+    border-radius: 80px;
+  }
+  
+  .save-button:before {
+    background-image: linear-gradient(92.83deg, #00ff04 0, #005e08 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .save-button:after {
+    background-color: initial;
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+  
+  .save-button:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgb(7, 145, 0) 0%, rgb(0, 234, 51) 100%);
+  }
+  
+  .save-button:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  .save-button:active:not(:disabled) {
+    color: #ccc;
+  }
+  
+  .save-button:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #00ff0d 0, #13f93d 100%);
+  }
+  
+  .save-button:active:not(:disabled):after {
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+  }
+  
+  .save-button:disabled {
+    cursor: default;
+    opacity: .24;
+  }
